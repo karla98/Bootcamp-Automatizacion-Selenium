@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-12T14:14:09 CST" name="Casos de prueba para Login de Usuarios" finished-at="2023-07-12T14:14:32 CST" duration-ms="22637">
+    <groups>
+    </groups>
+    <test started-at="2023-07-12T14:14:09 CST" name="Login de usuario con credenciales correctas" finished-at="2023-07-12T14:14:19 CST" duration-ms="9683">
+      <class name="Bootcamp_project.TestNG.LoginUsuarioDatosValidos">
+        <test-method is-config="true" signature="preparAmbiente()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioDatosValidos@687e99d8]" started-at="2023-07-12T14:14:09 CST" name="preparAmbiente" finished-at="2023-07-12T14:14:12 CST" duration-ms="3212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preparAmbiente -->
+        <test-method signature="Login_Invalido()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioDatosValidos@687e99d8]" started-at="2023-07-12T14:14:13 CST" name="Login_Invalido" finished-at="2023-07-12T14:14:19 CST" duration-ms="6300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_Invalido -->
+        <test-method is-config="true" signature="postPrueba()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioDatosValidos@687e99d8]" started-at="2023-07-12T14:14:19 CST" name="postPrueba" finished-at="2023-07-12T14:14:19 CST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postPrueba -->
+      </class> <!-- Bootcamp_project.TestNG.LoginUsuarioDatosValidos -->
+    </test> <!-- Login de usuario con credenciales correctas -->
+    <test started-at="2023-07-12T14:14:19 CST" name="Login de Usuario con credenciales incorrectas" finished-at="2023-07-12T14:14:32 CST" duration-ms="12894">
+      <class name="Bootcamp_project.TestNG.LoginUsuarioDatosInvalidos">
+        <test-method is-config="true" signature="preparAmbiente()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioDatosInvalidos@2b4bac49]" started-at="2023-07-12T14:14:19 CST" name="preparAmbiente" finished-at="2023-07-12T14:14:25 CST" duration-ms="5658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preparAmbiente -->
+        <test-method signature="Login_Valido()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioDatosInvalidos@2b4bac49]" started-at="2023-07-12T14:14:25 CST" name="Login_Valido" finished-at="2023-07-12T14:14:31 CST" duration-ms="6364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_Valido -->
+        <test-method is-config="true" signature="postPrueba()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioDatosInvalidos@2b4bac49]" started-at="2023-07-12T14:14:31 CST" name="postPrueba" finished-at="2023-07-12T14:14:32 CST" duration-ms="869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postPrueba -->
+      </class> <!-- Bootcamp_project.TestNG.LoginUsuarioDatosInvalidos -->
+    </test> <!-- Login de Usuario con credenciales incorrectas -->
+  </suite> <!-- Casos de prueba para Login de Usuarios -->
+</testng-results>

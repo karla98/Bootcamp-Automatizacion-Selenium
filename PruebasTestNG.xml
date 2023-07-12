@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Casos de prueba para Login de Usuarios" verbose="1" >
+	
+	<test name="Login de usuario con credenciales correctas"   >
+		<classes>
+			<class name="Bootcamp_project.TestNG.LoginUsuarioDatosValidos"/>
+		</classes>
+	</test>
+	
+	<test name="Login de Usuario con credenciales incorrectas"   >
+		<classes>
+			<class name="Bootcamp_project.TestNG.LoginUsuarioDatosInvalidos"/>
+		</classes>
+	</test>
+ 
+</suite>
