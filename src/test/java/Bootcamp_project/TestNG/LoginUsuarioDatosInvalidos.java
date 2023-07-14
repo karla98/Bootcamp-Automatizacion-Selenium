@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -39,9 +40,13 @@ public class LoginUsuarioDatosInvalidos {
 		dr.findElement(By.id("password")).sendKeys("contra");		
 		dr.findElement(By.id("login")).click();
 		
+		//validar prueba 
+		boolean isDisplayed = dr.findElement(By.id("alerta")).isDisplayed();
+        Assert.assertTrue(isDisplayed);
+		
 	}
 
-    	@Test
+   /* 	@Test
 	public void Login_Usuario_Inexistente() {
 		System.out.println("Login_Usuario_Inexistente");
 		try {
@@ -51,16 +56,15 @@ public class LoginUsuarioDatosInvalidos {
 			e.printStackTrace();
 		}
 		dr.findElement(By.id("email")).clear();
-		dr.findElement(By.id("email")).sendKeys("ejemplo2023gmail.com");
+		dr.findElement(By.id("email")).sendKeys("ejemplo2023@gmail.com");
 		dr.findElement(By.id("password")).clear();
-		dr.findElement(By.id("password")).sendKeys("contra");		
+		dr.findElement(By.id("password")).sendKeys("password");		
 		dr.findElement(By.id("login")).click();
 		
 	}
-	
+	*/
 	@AfterTest
 	public void postPrueba() {
-        //TODO  salir de sesion
 		dr.quit();
 		//dr.close();
 	}

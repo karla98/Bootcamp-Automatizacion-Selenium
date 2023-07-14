@@ -1,2 +1,8 @@
-Bootcamp_project\TestNG\LoginUsuarioDatosInvalidos.class
+Bootcamp_project\TestNG\BusquedaDatoInvalido.class
+Bootcamp_project\TestNG\BusquedaDatoValido.class
+Bootcamp_project\TestNG\LoginUsuarioDatosNulos.class
 Bootcamp_project\TestNG\LoginUsuarioDatosValidos.class
+Bootcamp_project\TestNG\OrdenarHistorial.class
+Bootcamp_project\TestNG\BusquedaDatoNulo.class
+Bootcamp_project\TestNG\AccesoRutasSinAutenticar.class
+Bootcamp_project\TestNG\LoginUsuarioDatosInvalidos.class

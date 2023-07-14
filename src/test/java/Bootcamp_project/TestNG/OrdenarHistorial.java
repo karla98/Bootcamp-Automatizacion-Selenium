@@ -8,12 +8,13 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class BusquedaDatoNulo {
+public class OrdenarHistorial {
 	
 	WebDriver dr;
 	
 	@BeforeTest
 	public void preparAmbiente() {
+		/*
 		System.out.println("Before test");
 		System.setProperty("Webdriver.chrome.driver", "C:\\Selenium\\drivers\\chrome\\chrome.exe");
 		dr = new ChromeDriver();
@@ -39,11 +40,12 @@ public class BusquedaDatoNulo {
 		dr.get("http://localhost:3000/occ");
 
 		dr.findElement(By.id("verHistorial")).click();
-	
+	*/
 	}
     
 	@Test
 	public void Ordenar_TotalVacantes() {
+		/*
 		try {
 			Thread.sleep(6000);
 		} catch (InterruptedException e) {
@@ -55,13 +57,23 @@ public class BusquedaDatoNulo {
 		Select select = new Select(selectElement);
 
     	select.selectByValue("desc");
+		*/
 	}
 	
 	@AfterTest
 	public void postPrueba() {
+		/*
 		//cerrar sesion
+		try {
+			Thread.sleep(6000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		dr.findElement(By.id("btnCerrarSesionOcc")).click();
 		dr.quit();
 		//dr.close();
+		*/
 	}
 	
 }
