@@ -1,117 +1,83 @@
 package Bootcamp_project.TestNG;
-import org.testng.annotations.Test;
 
-import java.time.Duration;
-
-import org.openqa.selenium.Alert;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
+public class LoginUsuarioDatosNulos  {
 
-public class LoginUsuarioDatosNulos {
-    WebDriver dr;
-	
-	@BeforeTest
-	public void preparAmbiente() {
-		//System.setProperty("Webdriver.chrome.driver", "C:\\Selenium\\drivers\\chrome\\chrome.exe");
-		//dr = new ChromeDriver();
-		
-		System.setProperty("Webdriver.gecko.driver", "C:\\Selenium\\drivers\\geckodriver\\geckodriver.exe");
-		dr = new FirefoxDriver();
-		
-		dr.manage().window().maximize();
-		dr.get("http://localhost:3000/");
-		
-	}
+    private WebDriver driver;
+    private ExtentReports extent;
+    private ExtentTest test;
+
+    @BeforeTest
+    public void preparAmbiente() {
+        System.out.println("Before test");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\drivers\\chrome\\chromedriver.exe");
+        driver = new ChromeDriver();
+
+        //System.setProperty("Webdriver.gecko.driver", "C:\\Selenium\\drivers\\geckodriver\\geckodriver.exe");
+        //driver = new FirefoxDriver();
+
+        driver.manage().window().maximize();
+        driver.get("http://localhost:3000/");
+
+        // Configurar ExtentReports
+        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("logindatosNulos.html");
+        extent = new ExtentReports();
+        extent.attachReporter(htmlReporter);
+    }
+
+    @Test
+    public void Email_Nulo() {
+        test = extent.createTest("Login de email nulo", "Prueba para verificar el inicio de sesión con datos nulos");
+        driver.findElement(By.id("email")).clear();
+        driver.findElement(By.id("password")).clear();
+        driver.findElement(By.id("password")).sendKeys("contra12345");
+        driver.findElement(By.id("login")).click();
+
+        String textoActual = driver.findElement(By.id("alerta")).getText();
+        
+        // Texto esperado
+        String textoEsperado = "POR FAVOR, COMPLETA TODOS LOS CAMPOS";
+        
+        Assert.assertEquals(textoActual, textoEsperado, "El texto no coincide");
+        // Marcar el caso de prueba como exitoso en el informe
+        test.log(Status.PASS, "Email: Prueba con nulos con resultado con forme a lo esperado");
+    }
     
-	@Test
-	public void Login_Nulos() {
-		System.out.println("Test 1");
-		try {
-			Thread.sleep(6000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		dr.findElement(By.id("email")).clear();
-		//dr.findElement(By.id("email")).sendKeys("ejemplogmail.com");
-		dr.findElement(By.id("password")).clear();
-		dr.findElement(By.id("password")).sendKeys("contra");		
-		dr.findElement(By.id("login")).click();
-		
-		//validar prueba 
-			//boolean isDisplayed = dr.findElement(By.id("alertaCamposVacios")).isDisplayed();
-		    //Assert.assertTrue(isDisplayed);
-		    
-	    WebDriverWait wait = new WebDriverWait(dr, Duration.ofSeconds(10));
-        Alert alert = null;
-        int attempts = 0;
+    @Test
+    public void Password_Nulo() {
+        test = extent.createTest("Login de password nula", "Prueba para verificar el inicio de sesión con datos nulos");
+        driver.findElement(By.id("email")).clear();
+        driver.findElement(By.id("email")).sendKeys("ejemplo@gmail.com");
+        driver.findElement(By.id("password")).clear();
+        driver.findElement(By.id("login")).click();
 
-        while (alert == null && attempts < 5) {
-            try {
-                alert = wait.until(ExpectedConditions.alertIsPresent());
-            } catch (Exception e) {
-                attempts++;
-                // Esperar un poco antes de intentar nuevamente
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException ex) {
-                    ex.printStackTrace();
-                }
-            }
-        }
+        String textoActual = driver.findElement(By.id("alerta")).getText();
+        
+        // Texto esperado
+        String textoEsperado = "POR FAVOR, COMPLETA TODOS LOS CAMPOS";
+        
+        Assert.assertEquals(textoActual, textoEsperado, "El texto no coincide");
+        // Marcar el caso de prueba como exitoso en el informe
+        test.log(Status.PASS, "Password: Prueba con nulos con resultado con forme a lo esperado");
+    }
+    
+    @AfterTest
+    public void postPrueba() {
+        driver.quit();
 
-        Assert.assertNotNull(alert, "No se encontró ninguna alerta en la página.");
-        System.out.println("Se encontró una alerta en la página.");
-
-        // Puedes interactuar con la alerta según sea necesario
-        alert.accept();
-	}
-/*
-	@Test
-	public void Login_Password_Nulo() {
-		System.out.println("Test 2");
-		try {
-			Thread.sleep(6000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		dr.findElement(By.id("email")).clear();
-		dr.findElement(By.id("email")).sendKeys("ejemplogmail.com");
-		dr.findElement(By.id("password")).clear();
-		//dr.findElement(By.id("password")).sendKeys("contra");		
-		dr.findElement(By.id("login")).click();
-	}
-
-	@Test
-	public void Login_Email_Nulo() {
-		System.out.println("Test 3");
-		try {
-			Thread.sleep(6000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		dr.findElement(By.id("email")).clear();
-		//dr.findElement(By.id("email")).sendKeys("ejemplogmail.com");
-		dr.findElement(By.id("password")).clear();
-		dr.findElement(By.id("password")).sendKeys("contra");		
-		dr.findElement(By.id("login")).click();
-	}
-	*/
-	@AfterTest
-	public void postPrueba() {
-		dr.quit();
-		//dr.close();
-	}
+        // Finalizar ExtentReports y generar el informe
+        extent.flush();
+    }
 
 }

@@ -17,20 +17,23 @@
 		</classes>
 	</test>
 	-->
+
+	<!--
 	<test name="Login con credenciales incorrectas"   >
 		<classes>
 			<class name="Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas"/>
 		</classes>
 	</test>
+	-->
 	
 
-   <!--
+  
 	<test name="Login de Usuario con nulos"   >
 		<classes>
 			<class name="Bootcamp_project.TestNG.LoginUsuarioDatosNulos"/>
 		</classes>
 	</test>
--->
+
 <!--
 	<test name="Acceso rutas sin autenticar"   >
 		<classes>

@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-13T19:56:25 CST" name="Casos de prueba para Login de Usuarios" finished-at="2023-07-13T19:56:38 CST" duration-ms="12742">
+  <suite started-at="2023-07-13T20:45:59 CST" name="Casos de prueba para Login de Usuarios" finished-at="2023-07-13T20:46:03 CST" duration-ms="4453">
     <groups>
     </groups>
-    <test started-at="2023-07-13T19:56:25 CST" name="Login con credenciales incorrectas" finished-at="2023-07-13T19:56:38 CST" duration-ms="12742">
-      <class name="Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas">
-        <test-method is-config="true" signature="preparAmbiente()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas@117e949d]" started-at="2023-07-13T19:56:25 CST" name="preparAmbiente" finished-at="2023-07-13T19:56:28 CST" duration-ms="2853" status="PASS">
+    <test started-at="2023-07-13T20:45:59 CST" name="Login de Usuario con nulos" finished-at="2023-07-13T20:46:03 CST" duration-ms="4453">
+      <class name="Bootcamp_project.TestNG.LoginUsuarioDatosNulos">
+        <test-method is-config="true" signature="preparAmbiente()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioDatosNulos@117e949d]" started-at="2023-07-13T20:45:59 CST" name="preparAmbiente" finished-at="2023-07-13T20:46:02 CST" duration-ms="3521" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preparAmbiente -->
-        <test-method signature="Credenciales_Invalidas()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas@117e949d]" started-at="2023-07-13T19:56:28 CST" name="Credenciales_Invalidas" finished-at="2023-07-13T19:56:33 CST" duration-ms="4287" status="PASS">
+        <test-method signature="Email_Nulo()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioDatosNulos@117e949d]" started-at="2023-07-13T20:46:02 CST" name="Email_Nulo" finished-at="2023-07-13T20:46:02 CST" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Credenciales_Invalidas -->
-        <test-method signature="User_Inexistente()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas@117e949d]" started-at="2023-07-13T19:56:33 CST" name="User_Inexistente" finished-at="2023-07-13T19:56:38 CST" duration-ms="5223" status="PASS">
+        </test-method> <!-- Email_Nulo -->
+        <test-method signature="Password_Nulo()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioDatosNulos@117e949d]" started-at="2023-07-13T20:46:02 CST" name="Password_Nulo" finished-at="2023-07-13T20:46:03 CST" duration-ms="230" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User_Inexistente -->
-        <test-method is-config="true" signature="postPrueba()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas@117e949d]" started-at="2023-07-13T19:56:38 CST" name="postPrueba" finished-at="2023-07-13T19:56:38 CST" duration-ms="344" status="PASS">
+        </test-method> <!-- Password_Nulo -->
+        <test-method is-config="true" signature="postPrueba()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioDatosNulos@117e949d]" started-at="2023-07-13T20:46:03 CST" name="postPrueba" finished-at="2023-07-13T20:46:03 CST" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postPrueba -->
-      </class> <!-- Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas -->
-    </test> <!-- Login con credenciales incorrectas -->
+      </class> <!-- Bootcamp_project.TestNG.LoginUsuarioDatosNulos -->
+    </test> <!-- Login de Usuario con nulos -->
   </suite> <!-- Casos de prueba para Login de Usuarios -->
 </testng-results>
