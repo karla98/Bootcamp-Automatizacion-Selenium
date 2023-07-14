@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-13T18:28:52 CST" name="Casos de prueba para Login de Usuarios" finished-at="2023-07-13T18:29:28 CST" duration-ms="35894">
+  <suite started-at="2023-07-13T19:56:25 CST" name="Casos de prueba para Login de Usuarios" finished-at="2023-07-13T19:56:38 CST" duration-ms="12742">
     <groups>
     </groups>
-    <test started-at="2023-07-13T18:28:52 CST" name="Busqueda de un dato invalido" finished-at="2023-07-13T18:29:28 CST" duration-ms="35894">
-      <class name="Bootcamp_project.TestNG.BusquedaDatoInvalido">
-        <test-method is-config="true" signature="preparAmbiente()[pri:0, instance:Bootcamp_project.TestNG.BusquedaDatoInvalido@10d68fcd]" started-at="2023-07-13T18:28:52 CST" name="preparAmbiente" finished-at="2023-07-13T18:28:54 CST" duration-ms="1836" status="PASS">
+    <test started-at="2023-07-13T19:56:25 CST" name="Login con credenciales incorrectas" finished-at="2023-07-13T19:56:38 CST" duration-ms="12742">
+      <class name="Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas">
+        <test-method is-config="true" signature="preparAmbiente()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas@117e949d]" started-at="2023-07-13T19:56:25 CST" name="preparAmbiente" finished-at="2023-07-13T19:56:28 CST" duration-ms="2853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preparAmbiente -->
-        <test-method signature="Busqueda_Invalida()[pri:0, instance:Bootcamp_project.TestNG.BusquedaDatoInvalido@10d68fcd]" started-at="2023-07-13T18:28:54 CST" name="Busqueda_Invalida" finished-at="2023-07-13T18:29:21 CST" duration-ms="27608" status="PASS">
+        <test-method signature="Credenciales_Invalidas()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas@117e949d]" started-at="2023-07-13T19:56:28 CST" name="Credenciales_Invalidas" finished-at="2023-07-13T19:56:33 CST" duration-ms="4287" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Busqueda_Invalida -->
-        <test-method is-config="true" signature="postPrueba()[pri:0, instance:Bootcamp_project.TestNG.BusquedaDatoInvalido@10d68fcd]" started-at="2023-07-13T18:29:21 CST" name="postPrueba" finished-at="2023-07-13T18:29:28 CST" duration-ms="6392" status="PASS">
+        </test-method> <!-- Credenciales_Invalidas -->
+        <test-method signature="User_Inexistente()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas@117e949d]" started-at="2023-07-13T19:56:33 CST" name="User_Inexistente" finished-at="2023-07-13T19:56:38 CST" duration-ms="5223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_Inexistente -->
+        <test-method is-config="true" signature="postPrueba()[pri:0, instance:Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas@117e949d]" started-at="2023-07-13T19:56:38 CST" name="postPrueba" finished-at="2023-07-13T19:56:38 CST" duration-ms="344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postPrueba -->
-      </class> <!-- Bootcamp_project.TestNG.BusquedaDatoInvalido -->
-    </test> <!-- Busqueda de un dato invalido -->
+      </class> <!-- Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas -->
+    </test> <!-- Login con credenciales incorrectas -->
   </suite> <!-- Casos de prueba para Login de Usuarios -->
 </testng-results>

@@ -11,13 +11,19 @@
 	</test>
 	 -->
 <!--
-	<test name="Login de Usuario con credenciales incorrectas"   >
+	<test name="Login de Usuario con datos incorrectos"   >
 		<classes>
 			<class name="Bootcamp_project.TestNG.LoginUsuarioDatosInvalidos"/>
 		</classes>
 	</test>
+	-->
+	<test name="Login con credenciales incorrectas"   >
+		<classes>
+			<class name="Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas"/>
+		</classes>
+	</test>
 	
--->
+
    <!--
 	<test name="Login de Usuario con nulos"   >
 		<classes>
@@ -46,10 +52,11 @@
 		</classes>
 	</test>
 	-->
-	
+	<!--
 	<test name="Busqueda de un dato invalido"   >
 		<classes>
 			<class name="Bootcamp_project.TestNG.BusquedaDatoInvalido"/>
 		</classes>
 	</test>
+	-->
 </suite>

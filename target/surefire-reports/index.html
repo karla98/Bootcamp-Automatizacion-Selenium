@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content passed suite-Casos_de_prueba_para_Login_de_Usuarios">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Casos_de_prueba_para_Login_de_Usuarios" title="Bootcamp_project.TestNG.BusquedaDatoInvalido" class="method navigator-link" hash-for-method="Busqueda_Invalida">Busqueda_Invalida</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Casos_de_prueba_para_Login_de_Usuarios" title="Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas" class="method navigator-link" hash-for-method="Credenciales_Invalidas">Credenciales_Invalidas</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Casos_de_prueba_para_Login_de_Usuarios" title="Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas" class="method navigator-link" hash-for-method="User_Inexistente">User_Inexistente</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Casos_de_prueba_para_Login_de_Usuarios -->
@@ -121,14 +126,21 @@
           <div class="suite-Casos_de_prueba_para_Login_de_Usuarios-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Bootcamp_project.TestNG.BusquedaDatoInvalido</span>
+              <span class="class-name">Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Busqueda_Invalida">
-                  </a> <!-- Busqueda_Invalida -->
-                  <span class="method-name">Busqueda_Invalida</span>
+                  <a name="Credenciales_Invalidas">
+                  </a> <!-- Credenciales_Invalidas -->
+                  <span class="method-name">Credenciales_Invalidas</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_Inexistente">
+                  </a> <!-- User_Inexistente -->
+                  <span class="method-name">User_Inexistente</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -143,11 +155,11 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Casos de prueba para Login de Usuarios&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Busqueda de un dato invalido&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login con credenciales incorrectas&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Bootcamp_project.TestNG.BusquedaDatoInvalido&quot;/&gt;
+      &lt;class name=&quot;Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Busqueda de un dato invalido --&gt;
+  &lt;/test&gt; &lt;!-- Login con credenciales incorrectas --&gt;
 &lt;/suite&gt; &lt;!-- Casos de prueba para Login de Usuarios --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,7 +171,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Busqueda de un dato invalido (1 class)</span>
+                <span class="test-name">Login con credenciales incorrectas (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,16 +197,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Busqueda_Invalida')
-data.setCell(0, 2, 'Bootcamp_project.TestNG.BusquedaDatoInvalido')
-data.setCell(0, 3, 27608);
+data.setCell(0, 1, 'User_Inexistente')
+data.setCell(0, 2, 'Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas')
+data.setCell(0, 3, 5223);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Credenciales_Invalidas')
+data.setCell(1, 2, 'Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas')
+data.setCell(1, 3, 4287);
 window.suiteTableData['Casos_de_prueba_para_Login_de_Usuarios']= { tableData: data, tableDiv: 'times-div-Casos_de_prueba_para_Login_de_Usuarios'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Casos_de_prueba_para_Login_de_Usuarios">
               </div> <!-- times-div-Casos_de_prueba_para_Login_de_Usuarios -->
             </div> <!-- times-div -->
@@ -220,18 +236,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Bootcamp_project.TestNG.BusquedaDatoInvalido</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Bootcamp_project.TestNG.LoginUsuarioCredencialesInvalidas</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">preparAmbiente</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">Busqueda_Invalida</span>
-                <span class="method-start">1886 ms</span>
+                <span class="method-name">Credenciales_Invalidas</span>
+                <span class="method-start">2875 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">User_Inexistente</span>
+                <span class="method-start">7164 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">postPrueba</span>
-                <span class="method-start">29496 ms</span>
+                <span class="method-start">12393 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

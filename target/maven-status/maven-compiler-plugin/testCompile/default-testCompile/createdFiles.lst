@@ -1,4 +1,5 @@
 Bootcamp_project\TestNG\BusquedaDatoInvalido.class
+Bootcamp_project\TestNG\LoginUsuarioCredencialesInvalidas.class
 Bootcamp_project\TestNG\BusquedaDatoValido.class
 Bootcamp_project\TestNG\LoginUsuarioDatosNulos.class
 Bootcamp_project\TestNG\LoginUsuarioDatosValidos.class
